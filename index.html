@@ -29,10 +29,8 @@
     background: var(--surface2);
     color: var(--text);
     min-height: 100vh;
-    padding: 0;
   }
 
-  /* HEADER */
   .header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -46,20 +44,13 @@
     z-index: 100;
   }
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  .logo { display: flex; align-items: center; gap: 10px; }
 
   .logo-icon {
-    width: 32px;
-    height: 32px;
+    width: 32px; height: 32px;
     background: var(--brand);
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
   }
 
   .logo-icon svg { width: 18px; height: 18px; fill: white; }
@@ -71,10 +62,7 @@
     letter-spacing: -0.3px;
   }
 
-  .nav-tabs {
-    display: flex;
-    gap: 4px;
-  }
+  .nav-tabs { display: flex; gap: 4px; }
 
   .nav-tab {
     padding: 6px 16px;
@@ -92,18 +80,12 @@
   .nav-tab:hover { background: var(--surface2); color: var(--text); }
   .nav-tab.active { background: var(--brand-light); color: var(--brand-dark); }
 
-  /* MAIN */
   .main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
 
-  /* VIEWS */
   .view { display: none; }
   .view.active { display: block; }
 
-  /* SUBMIT VIEW */
-  .submit-hero {
-    text-align: center;
-    margin-bottom: 2.5rem;
-  }
+  .submit-hero { text-align: center; margin-bottom: 2.5rem; }
 
   .submit-hero h1 {
     font-family: 'DM Serif Display', serif;
@@ -140,7 +122,7 @@
     margin-bottom: 8px;
   }
 
-  input[type="text"], textarea {
+  input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 12px 14px;
     border: 1px solid var(--border);
@@ -154,19 +136,14 @@
     resize: vertical;
   }
 
-  input[type="text"]:focus, textarea:focus {
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border-color: var(--brand);
     box-shadow: 0 0 0 3px rgba(29,158,117,0.12);
   }
 
   textarea { min-height: 120px; line-height: 1.6; }
 
-  .char-count {
-    font-size: 12px;
-    color: var(--text3);
-    text-align: right;
-    margin-top: 4px;
-  }
+  .char-count { font-size: 12px; color: var(--text3); text-align: right; margin-top: 4px; }
 
   .submit-btn {
     width: 100%;
@@ -190,10 +167,8 @@
   .submit-btn:active { transform: scale(0.99); }
   .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 
-  /* SPINNER */
   .spinner {
-    width: 18px;
-    height: 18px;
+    width: 18px; height: 18px;
     border: 2px solid rgba(255,255,255,0.4);
     border-top-color: white;
     border-radius: 50%;
@@ -201,7 +176,6 @@
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* SUCCESS STATE */
   .success-card {
     background: var(--brand-light);
     border: 1px solid #9FE1CB;
@@ -210,20 +184,15 @@
     text-align: center;
     display: none;
   }
-
   .success-card.show { display: block; }
 
   .success-icon {
-    width: 52px;
-    height: 52px;
+    width: 52px; height: 52px;
     background: var(--brand);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     margin: 0 auto 1rem;
   }
-
   .success-icon svg { width: 26px; height: 26px; fill: white; }
 
   .success-card h2 {
@@ -232,7 +201,6 @@
     color: var(--brand-dark);
     margin-bottom: 8px;
   }
-
   .success-card p { color: #0F6E56; font-size: 15px; line-height: 1.6; }
 
   .ai-result {
@@ -264,12 +232,7 @@
     font-weight: 500;
   }
 
-  .ai-summary {
-    font-size: 14px;
-    color: var(--text2);
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
+  .ai-summary { font-size: 14px; color: var(--text2); line-height: 1.6; margin-bottom: 10px; }
 
   .another-btn {
     margin-top: 1.5rem;
@@ -286,7 +249,6 @@
   }
   .another-btn:hover { background: #d0f0e4; }
 
-  /* ERROR */
   .error-msg {
     background: #FCEBEB;
     border: 1px solid #F7C1C1;
@@ -299,7 +261,6 @@
   }
   .error-msg.show { display: block; }
 
-  /* DASHBOARD VIEW */
   .dashboard-header {
     display: flex;
     align-items: center;
@@ -330,7 +291,6 @@
   }
   .refresh-btn:hover { border-color: var(--brand); color: var(--brand-dark); }
 
-  /* STATS ROW */
   .stats-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -349,7 +309,6 @@
   .stat-value { font-size: 26px; font-weight: 600; color: var(--text); }
   .stat-value.green { color: var(--brand); }
 
-  /* FILTERS */
   .filters-row {
     display: flex;
     gap: 8px;
@@ -384,7 +343,6 @@
     cursor: pointer;
   }
 
-  /* IDEAS GRID */
   .ideas-grid { display: flex; flex-direction: column; gap: 12px; }
 
   .idea-card {
@@ -409,12 +367,7 @@
     margin-bottom: 8px;
   }
 
-  .idea-title {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text);
-    line-height: 1.4;
-  }
+  .idea-title { font-size: 16px; font-weight: 600; color: var(--text); line-height: 1.4; }
 
   .status-badge {
     flex-shrink: 0;
@@ -458,24 +411,10 @@
     gap: 12px;
   }
 
-  .idea-meta span { display: flex; align-items: center; gap: 4px; }
-
-  /* EMPTY STATE */
-  .empty-state {
-    text-align: center;
-    padding: 4rem 2rem;
-    color: var(--text3);
-  }
-
-  .empty-state svg { width: 48px; height: 48px; opacity: 0.3; margin-bottom: 1rem; }
+  .empty-state { text-align: center; padding: 4rem 2rem; color: var(--text3); }
   .empty-state p { font-size: 15px; }
 
-  /* LOADING OVERLAY */
-  .loading-overlay {
-    text-align: center;
-    padding: 3rem;
-    color: var(--text2);
-  }
+  .loading-overlay { text-align: center; padding: 3rem; color: var(--text2); }
 
   .loading-dots {
     display: flex;
@@ -486,8 +425,7 @@
   }
 
   .dot {
-    width: 8px;
-    height: 8px;
+    width: 8px; height: 8px;
     background: var(--brand);
     border-radius: 50%;
     animation: bounce 1.2s infinite;
@@ -496,7 +434,55 @@
   .dot:nth-child(3) { animation-delay: 0.4s; }
   @keyframes bounce { 0%,80%,100%{transform:scale(0.6);opacity:0.4} 40%{transform:scale(1);opacity:1} }
 
-  /* SETTINGS VIEW */
+  /* ADMIN GATE */
+  .admin-gate {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .admin-gate h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .admin-gate p { font-size: 14px; color: var(--text2); margin-bottom: 1.5rem; }
+
+  .pin-input {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 8px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    outline: none;
+    margin-bottom: 1rem;
+  }
+  .pin-input:focus { border-color: var(--brand); }
+
+  .pin-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--brand);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .pin-btn:hover { background: var(--brand-dark); }
+
+  .pin-error { font-size: 13px; color: var(--danger); margin-top: 8px; display: none; }
+
+  /* SETTINGS */
   .settings-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -509,7 +495,6 @@
     font-family: 'DM Serif Display', serif;
     font-size: 20px;
     margin-bottom: 1.5rem;
-    color: var(--text);
   }
 
   .email-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 1rem; }
@@ -522,27 +507,19 @@
     background: var(--surface2);
     border-radius: var(--radius-sm);
     font-size: 14px;
-    color: var(--text);
   }
 
   .remove-email {
-    background: none;
-    border: none;
+    background: none; border: none;
     color: var(--text3);
     cursor: pointer;
     font-size: 16px;
     padding: 0 4px;
-    line-height: 1;
     transition: color 0.15s;
   }
   .remove-email:hover { color: var(--danger); }
 
-  .add-email-row {
-    display: flex;
-    gap: 8px;
-    margin-top: 1rem;
-  }
-
+  .add-email-row { display: flex; gap: 8px; margin-top: 1rem; }
   .add-email-row input { flex: 1; }
 
   .add-btn {
@@ -555,7 +532,6 @@
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.15s;
     white-space: nowrap;
   }
   .add-btn:hover { background: var(--brand-dark); }
@@ -571,16 +547,8 @@
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.15s;
   }
   .save-settings-btn:hover { background: var(--brand-dark); }
-
-  .settings-note {
-    font-size: 12px;
-    color: var(--text3);
-    margin-top: 8px;
-    line-height: 1.5;
-  }
 
   /* MODAL */
   .modal-overlay {
@@ -608,14 +576,11 @@
 
   .modal-close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
+    top: 1rem; right: 1rem;
+    background: none; border: none;
     font-size: 20px;
     color: var(--text3);
     cursor: pointer;
-    line-height: 1;
     padding: 4px;
   }
   .modal-close:hover { color: var(--text); }
@@ -625,7 +590,6 @@
     font-size: 22px;
     margin-bottom: 1rem;
     padding-right: 2rem;
-    color: var(--text);
   }
 
   .modal-meta {
@@ -635,21 +599,13 @@
     margin-bottom: 1.25rem;
   }
 
-  .modal-meta-item { font-size: 13px; }
   .modal-meta-label { color: var(--text3); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-  .modal-meta-value { color: var(--text); margin-top: 2px; }
-
-  .modal-desc {
-    font-size: 15px;
-    color: var(--text2);
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
-  }
+  .modal-meta-value { color: var(--text); margin-top: 2px; font-size: 13px; }
+  .modal-desc { font-size: 15px; color: var(--text2); line-height: 1.7; margin-bottom: 1.25rem; }
 
   @media (max-width: 600px) {
     .header { padding: 0 1rem; }
     .main { padding: 1.5rem 1rem; }
-    .modal-meta { grid-template-columns: 1fr; }
     .nav-tab { padding: 6px 10px; font-size: 13px; }
   }
 </style>
@@ -665,7 +621,7 @@
   </div>
   <nav class="nav-tabs">
     <button class="nav-tab active" onclick="showView('submit')">Submit idea</button>
-    <button class="nav-tab" onclick="showView('dashboard'); loadIdeas()">Dashboard</button>
+    <button class="nav-tab" onclick="showView('dashboard')">Dashboard</button>
     <button class="nav-tab" onclick="showView('settings')">Settings</button>
   </nav>
 </header>
@@ -683,6 +639,10 @@
       <div class="form-group">
         <label for="title">Idea title</label>
         <input type="text" id="title" placeholder="Give your idea a clear, concise title" maxlength="120">
+      </div>
+      <div class="form-group">
+        <label for="submitter-name">Your name</label>
+        <input type="text" id="submitter-name" placeholder="Your full name">
       </div>
       <div class="form-group">
         <label for="description">Describe your idea</label>
@@ -708,37 +668,44 @@
 
   <!-- DASHBOARD VIEW -->
   <div class="view" id="view-dashboard">
-    <div class="dashboard-header">
-      <h2>Ideas dashboard</h2>
-      <button class="refresh-btn" onclick="loadIdeas()">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10M23 14l-4.64 4.36A9 9 0 013.51 15"/></svg>
-        Refresh
-      </button>
+    <!-- ADMIN GATE -->
+    <div id="admin-gate" class="admin-gate">
+      <h3>Dashboard access</h3>
+      <p>This view is restricted. Enter your PIN to continue.</p>
+      <input type="password" class="pin-input" id="pin-input" maxlength="6" placeholder="••••" onkeydown="if(event.key==='Enter') checkPin()">
+      <button class="pin-btn" onclick="checkPin()">Unlock dashboard</button>
+      <div class="pin-error" id="pin-error">Incorrect PIN. Try again.</div>
     </div>
 
-    <div class="stats-row" id="stats-row">
-      <div class="stat-card"><div class="stat-label">Total ideas</div><div class="stat-value" id="stat-total">—</div></div>
-      <div class="stat-card"><div class="stat-label">New</div><div class="stat-value green" id="stat-new">—</div></div>
-      <div class="stat-card"><div class="stat-label">Under review</div><div class="stat-value" id="stat-review">—</div></div>
-      <div class="stat-card"><div class="stat-label">Approved</div><div class="stat-value" id="stat-approved">—</div></div>
-    </div>
-
-    <div class="filters-row">
-      <input class="filter-input" id="search-input" type="text" placeholder="Search ideas..." oninput="filterIdeas()">
-      <select class="filter-select" id="status-filter" onchange="filterIdeas()">
-        <option value="">All statuses</option>
-        <option value="New">New</option>
-        <option value="Under Review">Under Review</option>
-        <option value="Approved">Approved</option>
-        <option value="Declined">Declined</option>
-      </select>
-    </div>
-
-    <div id="ideas-container">
-      <div class="loading-overlay">
-        <div class="loading-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
-        <p>Loading ideas...</p>
+    <!-- DASHBOARD CONTENT (hidden until PIN correct) -->
+    <div id="dashboard-content" style="display:none">
+      <div class="dashboard-header">
+        <h2>Ideas dashboard</h2>
+        <button class="refresh-btn" onclick="loadIdeas()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10M23 14l-4.64 4.36A9 9 0 013.51 15"/></svg>
+          Refresh
+        </button>
       </div>
+
+      <div class="stats-row">
+        <div class="stat-card"><div class="stat-label">Total ideas</div><div class="stat-value" id="stat-total">—</div></div>
+        <div class="stat-card"><div class="stat-label">New</div><div class="stat-value green" id="stat-new">—</div></div>
+        <div class="stat-card"><div class="stat-label">Under review</div><div class="stat-value" id="stat-review">—</div></div>
+        <div class="stat-card"><div class="stat-label">Approved</div><div class="stat-value" id="stat-approved">—</div></div>
+      </div>
+
+      <div class="filters-row">
+        <input class="filter-input" id="search-input" type="text" placeholder="Search ideas..." oninput="filterIdeas()">
+        <select class="filter-select" id="status-filter" onchange="filterIdeas()">
+          <option value="">All statuses</option>
+          <option value="New">New</option>
+          <option value="Under Review">Under Review</option>
+          <option value="Approved">Approved</option>
+          <option value="Declined">Declined</option>
+        </select>
+      </div>
+
+      <div id="ideas-container"></div>
     </div>
   </div>
 
@@ -748,12 +715,10 @@
       <h3>Notification settings</h3>
       <label>Notify these email addresses on new submissions</label>
       <div class="email-list" id="email-list"></div>
-      <p class="settings-note">Changes are saved in your browser. To make them permanent, update the notification list in the app code.</p>
       <div class="add-email-row">
-        <input type="text" id="new-email-input" placeholder="name@ajg.com" onkeydown="if(event.key==='Enter') addEmail()">
+        <input type="email" id="new-email-input" placeholder="name@ajg.com" onkeydown="if(event.key==='Enter') addEmail()">
         <button class="add-btn" onclick="addEmail()">Add</button>
       </div>
-      <br>
       <button class="save-settings-btn" onclick="saveSettings()">Save settings</button>
       <div id="settings-msg" style="margin-top:10px;font-size:13px;color:var(--brand-dark);display:none;">Settings saved.</div>
     </div>
@@ -763,126 +728,47 @@
 
 <!-- IDEA DETAIL MODAL -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
-  <div class="modal" id="modal-content">
+  <div class="modal">
     <button class="modal-close" onclick="document.getElementById('modal-overlay').classList.remove('open')">✕</button>
     <div id="modal-body"></div>
   </div>
 </div>
 
 <script>
-// ─── CONFIG ──────────────────────────────────────────────────────────────────
-const CONFIG = {
-  claudeKey: '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',
-  tenantId: '6cacd170-f897-4b19-ac58-46a23307b80a',
-  spSite: 'ajg0.sharepoint.com',
-  spSitePath: '/sites/m365appbuilder-idea-to-impact-incubator-7744',
-  listName: 'Ideas',
-  defaultEmails: ['dan_tushinski@ajg.com']
-};
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyT6mXJEOHQ_BJGDDkvatEJroMZVuX6FSX4ZnGyxmdrDn4a3DZbJAJnug0qDTsYEBO3qg/exec';
+const CLAUDE_KEY = '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';
+const ADMIN_PIN = '1234';
+const NOTIFY_KEY = 'i2i_emails';
 
-// ─── STATE ───────────────────────────────────────────────────────────────────
 let allIdeas = [];
-let notifyEmails = JSON.parse(localStorage.getItem('idea-to-impact_emails') || 'null') || [...CONFIG.defaultEmails];
-let graphToken = null;
+let notifyEmails = JSON.parse(localStorage.getItem(NOTIFY_KEY) || 'null') || ['dan_tushinski@ajg.com'];
+let dashboardUnlocked = false;
 
-// ─── NAVIGATION ──────────────────────────────────────────────────────────────
+// ── NAVIGATION ──────────────────────────────────────────────────────────────
 function showView(name) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
   document.getElementById('view-' + name).classList.add('active');
   document.querySelectorAll('.nav-tab')[['submit','dashboard','settings'].indexOf(name)].classList.add('active');
   if (name === 'settings') renderEmailList();
+  if (name === 'dashboard' && dashboardUnlocked) loadIdeas();
 }
 
-// ─── GRAPH AUTH ──────────────────────────────────────────────────────────────
-async function getGraphToken() {
-  if (graphToken) return graphToken;
-  try {
-    // Use the logged-in user's session via SharePoint REST API (cookie-based auth)
-    // No MSAL needed when running inside SharePoint iFrame
-    return null; // Token handled by SharePoint cookie session
-  } catch(e) { return null; }
+// ── ADMIN PIN ────────────────────────────────────────────────────────────────
+function checkPin() {
+  const val = document.getElementById('pin-input').value;
+  if (val === ADMIN_PIN) {
+    dashboardUnlocked = true;
+    document.getElementById('admin-gate').style.display = 'none';
+    document.getElementById('dashboard-content').style.display = 'block';
+    loadIdeas();
+  } else {
+    document.getElementById('pin-error').style.display = 'block';
+    document.getElementById('pin-input').value = '';
+  }
 }
 
-// ─── SHAREPOINT REST API (cookie auth - works inside SP iFrame) ──────────────
-function getSpBaseUrl() {
-  return `https://${CONFIG.spSite}${CONFIG.spSitePath}`;
-}
-
-async function fetchFromSP(endpoint, options = {}) {
-  const url = `${getSpBaseUrl()}/_api/${endpoint}`;
-  const headers = {
-    'Accept': 'application/json;odata=verbose',
-    'Content-Type': 'application/json;odata=verbose',
-    ...options.headers
-  };
-  const res = await fetch(url, { ...options, headers, credentials: 'include' });
-  if (!res.ok) throw new Error(`SP error ${res.status}`);
-  return res.json();
-}
-
-async function getFormDigest() {
-  const data = await fetchFromSP('contextinfo', { method: 'POST' });
-  return data.d.GetContextWebInformation.FormDigestValue;
-}
-
-async function addIdeaToSP(idea) {
-  const digest = await getFormDigest();
-  const itemData = {
-    __metadata: { type: `SP.Data.${CONFIG.listName}ListItem` },
-    Title: idea.title,
-    description: idea.description,
-    submitter: idea.submitter,
-    submittedDate: new Date().toISOString(),
-    status: 'New',
-    tags: idea.tags.join(', ')
-  };
-  return fetchFromSP(`web/lists/getbytitle('${CONFIG.listName}')/items`, {
-    method: 'POST',
-    headers: { 'X-RequestDigest': digest },
-    body: JSON.stringify(itemData)
-  });
-}
-
-async function getIdeasFromSP() {
-  const data = await fetchFromSP(
-    `web/lists/getbytitle('${CONFIG.listName}')/items?$orderby=submittedDate desc&$top=200`
-  );
-  return data.d.results || [];
-}
-
-async function sendEmailViaSP(idea, aiSummary, tags) {
-  const digest = await getFormDigest();
-  const tagList = tags.map(t => `<span style="background:#E1F5EE;color:#0F6E56;padding:2px 8px;border-radius:10px;font-size:12px;margin-right:4px;">${t}</span>`).join('');
-  const body = `
-    <div style="font-family:sans-serif;max-width:560px;">
-      <h2 style="color:#1D9E75;">New idea submitted — Ideas to Impact</h2>
-      <p><strong>Title:</strong> ${idea.title}</p>
-      <p><strong>Submitted by:</strong> ${idea.submitter}</p>
-      <p><strong>Description:</strong><br>${idea.description}</p>
-      <p><strong>AI summary:</strong><br><em>${aiSummary}</em></p>
-      <p><strong>Categories:</strong> ${tagList}</p>
-      <hr style="border:none;border-top:1px solid #eee;margin:16px 0;">
-      <p style="color:#999;font-size:12px;">Submitted via Ideas to Impact</p>
-    </div>`;
-
-  const emailPayload = {
-    properties: {
-      __metadata: { type: 'SP.Utilities.EmailProperties' },
-      To: { results: notifyEmails },
-      Subject: `New idea: ${idea.title}`,
-      Body: body
-    }
-  };
-
-  return fetchFromSP('SP.Utilities.Utility.SendEmail', {
-    method: 'POST',
-    headers: { 'X-RequestDigest': digest },
-    body: JSON.stringify(emailPayload)
-  });
-}
-
-// ─── CLAUDE AI EVALUATION ────────────────────────────────────────────────────
+// ── CLAUDE AI ────────────────────────────────────────────────────────────────
 async function evaluateWithClaude(title, description) {
   const prompt = `You are evaluating a business idea submission. Analyze the idea and respond ONLY with valid JSON, no other text.
 
@@ -892,17 +778,16 @@ Description: "${description}"
 Respond with this exact JSON structure:
 {
   "summary": "A concise 1-2 sentence evaluation of the idea's potential value and feasibility",
-  "tags": ["tag1", "tag2", "tag3"],
-  "sentiment": "positive|neutral|needs_clarity"
+  "tags": ["tag1", "tag2", "tag3"]
 }
 
-For tags: generate 2-5 specific category tags relevant to the idea (e.g. "process improvement", "cost reduction", "customer experience", "technology", "employee wellbeing", "revenue growth", "risk management"). Be specific to the idea content.`;
+For tags: generate 2-5 specific category tags relevant to the idea (e.g. "process improvement", "cost reduction", "customer experience", "technology", "employee wellbeing", "revenue growth", "risk management").`;
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'x-api-key': CONFIG.claudeKey,
+      'x-api-key': CLAUDE_KEY,
       'anthropic-version': '2023-06-01',
       'anthropic-dangerous-direct-browser-calls': 'true'
     },
@@ -913,63 +798,52 @@ For tags: generate 2-5 specific category tags relevant to the idea (e.g. "proces
     })
   });
 
-  if (!res.ok) throw new Error('Claude API error');
+  if (!res.ok) throw new Error('AI evaluation failed');
   const data = await res.json();
-  const text = data.content[0].text.trim();
-  const clean = text.replace(/```json|```/g, '').trim();
-  return JSON.parse(clean);
+  const text = data.content[0].text.trim().replace(/```json|```/g, '').trim();
+  return JSON.parse(text);
 }
 
-// ─── SUBMIT IDEA ─────────────────────────────────────────────────────────────
+// ── SUBMIT ───────────────────────────────────────────────────────────────────
 async function submitIdea() {
   const title = document.getElementById('title').value.trim();
+  const submitter = document.getElementById('submitter-name').value.trim();
   const description = document.getElementById('description').value.trim();
-  const errorEl = document.getElementById('error-msg');
-  
-  errorEl.classList.remove('show');
-  
+
+  document.getElementById('error-msg').classList.remove('show');
+
   if (!title) return showError('Please add a title for your idea.');
-  if (description.length < 20) return showError('Please describe your idea in a bit more detail (at least 20 characters).');
+  if (!submitter) return showError('Please enter your name.');
+  if (description.length < 20) return showError('Please describe your idea in a bit more detail.');
 
   const btn = document.getElementById('submit-btn');
-  const label = document.getElementById('btn-label');
   btn.disabled = true;
-  label.innerHTML = '<div class="spinner"></div> Evaluating...';
+  document.getElementById('btn-label').innerHTML = '<div class="spinner"></div> Evaluating...';
 
   try {
-    // Get submitter name from SharePoint
-    let submitter = 'Unknown';
-    try {
-      const userInfo = await fetchFromSP('web/currentuser');
-      submitter = userInfo.d.Title || userInfo.d.Email || 'Unknown';
-    } catch(e) { submitter = 'Team member'; }
-
-    // AI evaluation
     const ai = await evaluateWithClaude(title, description);
 
-    // Save to SharePoint
-    await addIdeaToSP({ title, description, submitter, tags: ai.tags });
+    const payload = { title, description, submitter, tags: ai.tags, notifyEmails };
 
-    // Send notification email
-    try { await sendEmailViaSP({ title, description, submitter }, ai.summary, ai.tags); } catch(e) { console.warn('Email failed:', e); }
+    await fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
 
-    // Show success
     document.getElementById('form-container').style.display = 'none';
-    const successCard = document.getElementById('success-card');
-    successCard.classList.add('show');
-
+    document.getElementById('success-card').classList.add('show');
     document.getElementById('ai-result').innerHTML = `
       <div class="ai-result-label">AI evaluation</div>
-      <div class="ai-summary">${ai.summary}</div>
+      <div class="ai-summary">${escHtml(ai.summary)}</div>
       <div class="ai-result-label" style="margin-top:10px;">Categories</div>
-      <div class="tags-row">${ai.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+      <div class="tags-row">${ai.tags.map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}</div>
     `;
-
   } catch(err) {
-    console.error(err);
-    showError('Something went wrong: ' + err.message + '. If you are testing outside SharePoint, Graph API calls will fail — this is expected.');
+    showError('Something went wrong: ' + err.message);
     btn.disabled = false;
-    label.textContent = 'Submit idea';
+    document.getElementById('btn-label').textContent = 'Submit idea';
   }
 }
 
@@ -981,6 +855,7 @@ function showError(msg) {
 
 function resetForm() {
   document.getElementById('title').value = '';
+  document.getElementById('submitter-name').value = '';
   document.getElementById('description').value = '';
   document.getElementById('char-count').textContent = '0';
   document.getElementById('error-msg').classList.remove('show');
@@ -990,31 +865,27 @@ function resetForm() {
   document.getElementById('btn-label').textContent = 'Submit idea';
 }
 
-// ─── CHAR COUNT ───────────────────────────────────────────────────────────────
 document.getElementById('description').addEventListener('input', function() {
   document.getElementById('char-count').textContent = this.value.length;
 });
 
-// ─── DASHBOARD ────────────────────────────────────────────────────────────────
+// ── DASHBOARD ─────────────────────────────────────────────────────────────────
 async function loadIdeas() {
   const container = document.getElementById('ideas-container');
   container.innerHTML = `<div class="loading-overlay"><div class="loading-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div><p>Loading ideas...</p></div>`;
 
   try {
-    const items = await getIdeasFromSP();
-    allIdeas = items.map(i => ({
-      id: i.ID,
-      title: i.Title || '(untitled)',
-      description: i.description || '',
-      submitter: i.submitter || 'Unknown',
-      submittedDate: i.submittedDate || i.Created,
-      status: i.status || 'New',
+    const res = await fetch(SCRIPT_URL + '?action=get');
+    const data = await res.json();
+    if (!data.success) throw new Error(data.error);
+    allIdeas = (data.ideas || []).map(i => ({
+      ...i,
       tags: (i.tags || '').split(',').map(t => t.trim()).filter(Boolean)
-    }));
+    })).reverse();
     updateStats();
     filterIdeas();
   } catch(err) {
-    container.innerHTML = `<div class="empty-state"><p>Could not load ideas. Make sure this page is running inside SharePoint.<br><small style="color:var(--text3)">${err.message}</small></p></div>`;
+    container.innerHTML = `<div class="empty-state"><p>Could not load ideas.<br><small>${err.message}</small></p></div>`;
   }
 }
 
@@ -1029,7 +900,7 @@ function filterIdeas() {
   const q = document.getElementById('search-input').value.toLowerCase();
   const s = document.getElementById('status-filter').value;
   const filtered = allIdeas.filter(i => {
-    const matchQ = !q || i.title.toLowerCase().includes(q) || i.description.toLowerCase().includes(q) || i.submitter.toLowerCase().includes(q) || i.tags.some(t => t.toLowerCase().includes(q));
+    const matchQ = !q || (i.Title||'').toLowerCase().includes(q) || (i.description||'').toLowerCase().includes(q) || (i.submitter||'').toLowerCase().includes(q);
     const matchS = !s || i.status === s;
     return matchQ && matchS;
   });
@@ -1039,20 +910,20 @@ function filterIdeas() {
 function renderIdeas(ideas) {
   const container = document.getElementById('ideas-container');
   if (!ideas.length) {
-    container.innerHTML = `<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg><p>No ideas found.</p></div>`;
+    container.innerHTML = `<div class="empty-state"><p>No ideas found.</p></div>`;
     return;
   }
-  container.innerHTML = `<div class="ideas-grid">${ideas.map(idea => `
-    <div class="idea-card" onclick="openModal(${idea.id})">
+  container.innerHTML = `<div class="ideas-grid">${ideas.map((idea, idx) => `
+    <div class="idea-card" onclick="openModal(${idx})">
       <div class="idea-card-top">
-        <div class="idea-title">${escHtml(idea.title)}</div>
-        <span class="status-badge status-${statusClass(idea.status)}">${escHtml(idea.status)}</span>
+        <div class="idea-title">${escHtml(idea.Title || idea.title || '')}</div>
+        <span class="status-badge status-${statusClass(idea.status)}">${escHtml(idea.status || 'New')}</span>
       </div>
-      <div class="idea-description">${escHtml(idea.description)}</div>
+      <div class="idea-description">${escHtml(idea.description || '')}</div>
       <div class="idea-footer">
-        <div class="tags-row">${idea.tags.map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}</div>
+        <div class="tags-row">${(idea.tags||[]).map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}</div>
         <div class="idea-meta">
-          <span>${escHtml(idea.submitter)}</span>
+          <span>${escHtml(idea.submitter || '')}</span>
           <span>${formatDate(idea.submittedDate)}</span>
         </div>
       </div>
@@ -1060,57 +931,56 @@ function renderIdeas(ideas) {
 }
 
 function statusClass(s) {
-  const map = { 'New': 'new', 'Under Review': 'review', 'Approved': 'approved', 'Declined': 'declined' };
+  const map = {'New':'new','Under Review':'review','Approved':'approved','Declined':'declined'};
   return map[s] || 'new';
 }
 
 function formatDate(d) {
   if (!d) return '';
-  return new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  try { return new Date(d).toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}); }
+  catch(e) { return ''; }
 }
 
 function escHtml(s) {
-  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ─── MODAL ────────────────────────────────────────────────────────────────────
-function openModal(id) {
-  const idea = allIdeas.find(i => i.id === id);
+// ── MODAL ────────────────────────────────────────────────────────────────────
+function openModal(idx) {
+  const idea = allIdeas[idx];
   if (!idea) return;
   document.getElementById('modal-body').innerHTML = `
-    <h3>${escHtml(idea.title)}</h3>
+    <h3>${escHtml(idea.Title || idea.title || '')}</h3>
     <div class="modal-meta">
-      <div class="modal-meta-item"><div class="modal-meta-label">Submitted by</div><div class="modal-meta-value">${escHtml(idea.submitter)}</div></div>
-      <div class="modal-meta-item"><div class="modal-meta-label">Date</div><div class="modal-meta-value">${formatDate(idea.submittedDate)}</div></div>
-      <div class="modal-meta-item"><div class="modal-meta-label">Status</div><div class="modal-meta-value"><span class="status-badge status-${statusClass(idea.status)}">${escHtml(idea.status)}</span></div></div>
+      <div><div class="modal-meta-label">Submitted by</div><div class="modal-meta-value">${escHtml(idea.submitter||'')}</div></div>
+      <div><div class="modal-meta-label">Date</div><div class="modal-meta-value">${formatDate(idea.submittedDate)}</div></div>
+      <div><div class="modal-meta-label">Status</div><div class="modal-meta-value"><span class="status-badge status-${statusClass(idea.status)}">${escHtml(idea.status||'New')}</span></div></div>
     </div>
-    <div class="modal-desc">${escHtml(idea.description)}</div>
-    ${idea.tags.length ? `<div><div style="font-size:12px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Categories</div><div class="tags-row">${idea.tags.map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}</div></div>` : ''}
+    <div class="modal-desc">${escHtml(idea.description||'')}</div>
+    ${(idea.tags||[]).length ? `<div><div class="modal-meta-label" style="margin-bottom:8px;">Categories</div><div class="tags-row">${idea.tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div></div>` : ''}
   `;
   document.getElementById('modal-overlay').classList.add('open');
 }
 
 function closeModal(e) {
-  if (e.target === document.getElementById('modal-overlay')) {
+  if (e.target === document.getElementById('modal-overlay'))
     document.getElementById('modal-overlay').classList.remove('open');
-  }
 }
 
-// ─── SETTINGS ─────────────────────────────────────────────────────────────────
+// ── SETTINGS ─────────────────────────────────────────────────────────────────
 function renderEmailList() {
   document.getElementById('email-list').innerHTML = notifyEmails.map((email, i) => `
     <div class="email-item">
       <span>${escHtml(email)}</span>
-      <button class="remove-email" onclick="removeEmail(${i})" title="Remove">✕</button>
-    </div>`).join('') || '<div style="font-size:14px;color:var(--text3);">No emails added yet.</div>';
+      <button class="remove-email" onclick="removeEmail(${i})">✕</button>
+    </div>`).join('') || '<div style="font-size:14px;color:var(--text3);">No emails added.</div>';
 }
 
 function addEmail() {
   const input = document.getElementById('new-email-input');
   const val = input.value.trim().toLowerCase();
   if (!val || !val.includes('@')) return;
-  if (notifyEmails.includes(val)) { input.value = ''; return; }
-  notifyEmails.push(val);
+  if (!notifyEmails.includes(val)) notifyEmails.push(val);
   input.value = '';
   renderEmailList();
 }
@@ -1121,7 +991,7 @@ function removeEmail(i) {
 }
 
 function saveSettings() {
-  localStorage.setItem('idea-to-impact_emails', JSON.stringify(notifyEmails));
+  localStorage.setItem(NOTIFY_KEY, JSON.stringify(notifyEmails));
   const msg = document.getElementById('settings-msg');
   msg.style.display = 'block';
   setTimeout(() => msg.style.display = 'none', 2500);
